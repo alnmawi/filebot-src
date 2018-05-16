@@ -19,16 +19,6 @@ public class FileBotMenuBar {
 
 		help.addSeparator();
 
-		if (isMacSandbox()) {
-			help.add(createLink("Report Bugs", getApplicationProperty("link.help.mas")));
-			help.add(createLink("Request Help", getApplicationProperty("link.help.mas")));
-		} else {
-			help.add(createLink("Report Bugs", getApplicationProperty("link.bugs")));
-			help.add(createLink("Request Help", getApplicationProperty("link.help")));
-		}
-
-		help.addSeparator();
-
 		help.add(createLink("Contact us on Twitter", getApplicationProperty("link.twitter")));
 		help.add(createLink("Contact us on Facebook", getApplicationProperty("link.facebook")));
 
